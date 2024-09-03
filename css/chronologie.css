@@ -58,6 +58,7 @@
 
 .card{
     border-color: rgb(112, 112, 112) !important;
+    margin-top: 0 !important;
 }
 
 .card-body{
