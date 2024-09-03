@@ -1,0 +1,92 @@
+.responsive-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    z-index: 2;
+    border-radius: 3px;
+}
+
+.responsive-button img {
+    width: 24px !important;
+    height: 24px !important;
+}
+
+.responsive-button:hover {
+    background-color: #f8f9fa;
+}
+
+@media (max-width: 600px) {
+    .responsive-button {
+        font-size: 10px !important;
+
+    }
+
+    .responsive-button img {
+        width: 16px !important;
+        height: 17px !important;
+    }
+}
+
+.carousel-item{
+    position: relative;
+    z-index: 1;
+    max-height: 88vh !important;
+    min-height: 80vh;
+}
+
+.jumbotron{
+    display: flex;
+    justify-content: center;
+    max-height: 104vh !important;
+}
+
+.carousel{
+    max-width: 60vh !important;
+}
+
+.carousel-inner{
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+
+}
+.date{
+    text-align: center;
+}
+
+.card{
+    border-color: rgb(112, 112, 112) !important;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.carousel-item img, .carousel-item video {
+    width: 100%;
+    height: 100%;
+}
+
+.image{
+    max-height: 88vh !important;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+}
+
+.image2{
+    margin-top: 40% !important;
+    margin-bottom: 40% !important;
+}
+
+
+.carousel-control-prev {
+    max-height: 2.5vh;
+    transform: translateY(1700%) !important;
+}
+
+.carousel-control-next{
+    max-height: 2.5vh;
+    transform: translateY(1700%) !important;
+}

@@ -1,0 +1,40 @@
+.ratio_left-cover-1{
+    text-align: center;
+    background-color: rgb(236, 234, 234) !important;
+}
+
+.ratio_right-cover-2{
+    text-align: center;
+    background-color: rgb(236, 234, 234) !important;
+}
+
+.b-0 {
+    bottom: 0;
+}
+
+
+.top-indicator {
+    right: 0;
+    top: 1rem;
+    bottom: inherit;
+    left: inherit;
+    margin-right: 1rem;
+}
+.overflow {
+    position: relative;
+    overflow: hidden;
+}
+.zoom img {
+    transition: all 0.2s linear;
+}
+.zoom:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.carousel-item{
+    max-height: 56.8vh !important;
+    overflow: hidden;
+}
+
+    

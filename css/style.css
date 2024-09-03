@@ -1,0 +1,103 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+  }
+  .grass, .sky, .road{
+    position: relative;
+  }
+  .sky{
+    height: 40%;
+    background-color: skyblue;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,.33))
+  }
+  .grass{
+    height: 30%;
+    background-color: seagreen;
+    background-image: linear-gradient(to top, rgba(255,255,255,0) 75%, rgba(255,255,255,.25))
+  }
+  .road{
+    height: 30%;
+    background: dimgrey;
+    box-sizing: border-box;
+    border-top: 10px solid grey;
+    border-bottom: 10px solid grey;
+    width: 100%;
+  }
+  /*// ELEMENTS TO ANIMATE //*/
+  .bus{
+    position: absolute;
+    top: -60px;
+    left: -710px;
+    animation-name: drive;
+    animation-duration: 3s;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    z-index: 5;
+  }
+
+  .yo_la_team{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    animation-name: texte;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    
+  }
+
+  .texte_btn{
+    font-weight: bold;
+    font-size: larger;
+    display: flex;
+    text-align: center;
+    color: #fff;
+  }
+
+  .texte_btn:hover{
+    color: rgb(29, 29, 29);
+  }
+
+  .cloud{
+    position: absolute;
+    top: 120px;
+    left: 0;
+  }
+  .cloud2{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    max-width: 200px;
+  }
+  
+  .lines{
+    box-sizing: border-box;
+    border: 5px dashed #fff;
+    height: 0px;
+    width: 6000px;
+    position: absolute;
+    top: 45%;
+    left: 0;
+  }
+  /*// KEYFRAMES //*/
+  @keyframes drive {
+    0%{
+      left: -710px;
+    }
+    100%{
+      left: 1900px;
+    }
+  }
+
+
+  @keyframes texte {
+    100%{
+        visibility: visible;
+    }
+  }
